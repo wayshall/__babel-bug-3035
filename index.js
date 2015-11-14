@@ -1,15 +1,21 @@
-export default class IndexViewCtrl {
+class IndexViewCtrl {
     constructor(UserSessionSvc, FLAGS) {
         this.FLAGS = FLAGS;
-        this.appTitle = FLAGS.title;
         this.isLoggedIn = false;
 
-        UserSessionSvc.getLoggedInUser()
-            .then(() => this.isLoggedIn = true);
+    }
+
+    test(){
+    	console.dir(this);
     }
 }
 
-IndexViewCtrl.$inject = [
-    "UserSessionSvc",
-    "FLAGS"
-];
+var v = new IndexViewCtrl();
+v.test();
+
+var service = {
+    doSomeThing: function(fn){
+        fn();
+    }
+}
+service.doSomeThing(v.test);
