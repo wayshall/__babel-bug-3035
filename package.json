@@ -1,0 +1,22 @@
+{
+  "name": "babel-bug-3035",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel index.js"
+  },
+  "author": "James Kyle <me@thejameskyle.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.1.18",
+    "babel-plugin-transform-es3-member-expression-literals": "^6.1.18",
+    "babel-plugin-transform-es3-property-literals": "^6.1.18",
+    "babel-plugin-transform-es5-property-mutators": "^6.1.18",
+    "babel-plugin-transform-node-env-inline": "^6.1.18",
+    "babel-plugin-transform-object-assign": "^6.1.18",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-stage-1": "^6.1.18"
+  },
+  "private": true
+}
