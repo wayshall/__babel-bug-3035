@@ -11,11 +11,11 @@ class IndexViewCtrl {
 }
 
 var v = new IndexViewCtrl();
-v.test();
+v.test();//in the console log, the this is IndexViewCtrl
 
 var service = {
     doSomeThing: function(fn){
-        fn();
+        fn();//in the console log, the this is undefined
     }
 }
 service.doSomeThing(v.test);
